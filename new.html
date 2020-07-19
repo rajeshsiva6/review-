@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<h1 id=main_head> EMPLOYEE FORM </h1> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+		<body>
+
+			<div id="form_div">
+				<form id="form">
+					<div>
+						<label>Name:</label><br>
+						<input type="text" size="50" name="name"  id="name" placeholder="Enter your name" pattern="[A-Z a-z]{10,30}" title="enter min 10 or max 30 characters" autofocus>
+					</div>
+					<div>
+						<label>DOJ:</label><br>
+						<input type="text" size="50" name="doj" id="doj" value="" placeholder="Enter your doj" pattern="\d{1,2}/\d{1,2}/\d{4}" title="dd/mm/yyyy">
+					</div>
+					<div>
+						<label>Age:</label><br> 
+						<input type="text" size="50" name="age" id="age" placeholder="Enter your age" pattern="[0-9]{2}" title="enter 2 numeric values only">
+					</div>
+					<div>
+						<label>designation:</label><br>
+						<input type="text" size="50" name="designation" id="designation" placeholder="enter your designation" pattern="[A-Z a-z]{10,30}"title="enter min 10 or max 30 characters">
+						
+					</div>	
+					<div>
+						<label>E-mail Address:</label><br>
+						<input type="text" size="50" name="email" id="email" placeholder="Enter your email" pattern="[a-z 0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="characters@domain.com">
+					</div>
+					<div>
+						<label>experience:</label><br>
+						<input type="text" size="50" name="experience" id="experience" placeholder="Enter your year of experience" pattern="[0-9]{2}" title="enter numeric values only">
+					</div>
+					<div>
+						<label>Phone no:</label><br>
+						<input type="text" size="50" name="phone" id="phone" placeholder="Enter your phone no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="enter valid format [989-989-9000]">
+					</div> 
+					<div>
+						<label>department:</label><br>
+						<input type="text" size="50" name="department"  id="department" placeholder="Enter your department" pattern="[A-Z a-z]{10,30}" title="enter min 10 or max 30 characters" autofocus>
+					</div> 
+					<div id="button"><br> 	   
+						<input type="reset" value="Reset" id="reset" name="Reset">
+						<div><br>
+							<button id="sub">Add</button>
+							<button id="edit" class="hide">Edit</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+			<table border="4">
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>doj</th>
+						<th>age</th>
+						<th>Designation</th>										
+						<th>email</th>
+						<th>phone </th>
+						<th>experience</th>
+						<th>department</th>
+						<th>delete</th>
+						<th>edit</th>
+					</tr>
+				</thead>
+				<tbody id="response">
+				</tbody>
+			</table>
+		</body>
+		<script type="text/javascript" src="app.js"></script>						
+</html>
+
+
+
+
